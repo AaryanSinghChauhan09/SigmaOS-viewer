@@ -1,7 +1,7 @@
 # SigmaOS-SigmaOS-viewer Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-viewer provides Viewer component for SigmaOS for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-SigmaOS-viewer provides Image viewer (formats, gallery, annotations) for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
 - Single Responsibility
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-viewer follows a SigmaOS-viewer pattern:
 
 ## API
 The component provides the following public APIs:
-- `core::manage(SigmaOS-viewer)` - Manage a SigmaOS-viewer by given configuration
-- `core::register(SigmaOS-viewer)` - Register a SigmaOS-viewer by given name
-- `core::status::SigmaOS-viewer()` - Get SigmaOS-viewer status and SigmaOS-viewer availability
-- `core::track::SigmaOS-viewer()` - Track SigmaOS-viewer management and SigmaOS-viewer tracking
+-  - Manage a SigmaOS-viewer by given configuration
+-  - Register a SigmaOS-viewer by given name
+-  - Get SigmaOS-viewer status and SigmaOS-viewer availability
+-  - Track SigmaOS-viewer management and SigmaOS-viewer tracking
 - Error types for SigmaOS-viewer failure scenarios or unsupported SigmaOS-viewer types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -33,24 +33,10 @@ All tests follow the AAA pattern:
 3. **Assert**: Verify the expected SigmaOS-viewer results
 
 Example:
-```rust
-#[test]
-fn test_SigmaOS-viewer_aaa() {
-    // Arrange
-    let SigmaOS-viewer = SigmaOS-viewer::new("my-SigmaOS-viewer");
-    
-    // Act
-    let result = core::manage(SigmaOS-viewer);
-    
-    // Assert
-    assert!(result.is_ok());
-    let managed = result.unwrap();
-    assert!(managed.is_managed());
-}
-```
+
 
 ## Development
-- Follows Rust best practices with `#![forbid(unsafe_code)]`
+- Follows Rust best practices with 
 - SigmaOS-viewer initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-viewer failure scenarios
 - Unit tests provided for SigmaOS-viewer management and configuration

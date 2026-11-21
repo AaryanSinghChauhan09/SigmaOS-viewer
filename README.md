@@ -1,9 +1,9 @@
 # SigmaOS-viewer
 
-Viewer component for SigmaOS
+Image viewer for SigmaOS inspired by SigmaOS Linux
 
-- **Category:** Creative
-- **Engine:** media_player
+- **Category:** Utilities
+- **Engine:**  image_viewer
 - **Language:** Rust
 
 ## Build & Test
